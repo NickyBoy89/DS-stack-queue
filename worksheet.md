@@ -1,10 +1,9 @@
-# 02/14 Worksheet: Stacks & Queues and Binary Search
-## Initial due date: *12/18 5pm*
-### Accepted as on time until 12/20 11:59pm
+# 09/25 Worksheet: Stacks & Queues and Binary Search
+## Due date: *10/02 @11:59 PM*
 Collaborators:
 
 Answer the below questions, and make sure that you commit to your own branch.
-When done, run your code through [the autograder](http://autograder.oxy.edu/) and make a pull request on github. Don't forget to tag @irabkina.
+When done, make a pull request on github. Don't forget to tag @Anh-Thuong-Vo.
 Respond to my comments by making new commits to the same branch.
 
 ## Review
@@ -14,7 +13,7 @@ Respond to my comments by making new commits to the same branch.
 4. In your own words, explain the worst-case time complexity of binary search on an array. Be sure to also explain why getting an element from an array has O(1) time.
 
 ## Exploration
-1. In this question, we are going to implement the `push()`, `pop()`, and `peek()` methods for LinkedList based Stacks. Try to do this without referencing the video. When done, you should both submit your code to the [the autograder](http://autograder.oxy.edu/) and commit it to your github branch.
+1. In this question, we are going to implement the `push()`, `pop()`, and `peek()` methods for LinkedList based Stacks. Try to do this without referencing the video.
 Starter code can be found in MyStack.java. You'll notice that MyStack extends IntLinkedList, which is provided to you as an abstract class in IntLinkedList.java. One of the benefits of using an abstract class is that we can use its implemented methods. Here, you may want to make use of methods like `add()`, `get()`, and `remove()`. You may refer to the LinkedList using the `this` keyword (e.g., `this.get(5)` or `this.head`).    
 
    a. At the first FIXME in MyStack.java, implement the `push()` method. Think about where the new element will need to be, in terms of the LinkedList and how the LinkedList will need to be adjusted (if at all).  
@@ -23,7 +22,7 @@ Starter code can be found in MyStack.java. You'll notice that MyStack extends In
 
     c. At the third FIXME in MyStack.java, implement the `peek()` method. Think about how this method differs from `pop()`.
 
-2. In this question, we are going to implement the `push()`, `pop()`, and `peek()` methods for LinkedList based Queues. Try to do this without referencing the video. When done, you should both submit your code to the [the autograder](http://autograder.oxy.edu/) and commit it to your github branch.
+2. In this question, we are going to implement the `push()`, `pop()`, and `peek()` methods for LinkedList based Queues. Try to do this without referencing the video. 
 
     Starter code can be found in MyQueue.java. You'll notice that it, too, extends IntLinkedList. As above, consider making use of its implemented methods.    
     
