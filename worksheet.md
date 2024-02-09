@@ -1,5 +1,5 @@
-# 09/25 Worksheet: Stacks & Queues and Binary Search
-## Due date: *10/02 @11:59 PM*
+# 02/12 Worksheet: Stacks & Queues and Binary Search
+## Due date: *02/19 @11:59 PM*
 Collaborators:
 
 Answer the below questions, and make sure that you commit to your own branch.
