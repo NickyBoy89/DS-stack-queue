@@ -52,13 +52,13 @@ public class MyStack<T> extends MyLinkedList<T> {
 		for (int i = 0; i < 5; i++) {
 			list.push(new Integer (i * i));
 		}
-		int[] answer2 = {16, 9, 4, 1, 0};
+		int[] answer2 = {0,1,4,9,16};
 		assertIsEqual(list, answer2);
 
 		// delete some numbers in the middle
 		list.remove(new Integer(1));
 		list.remove(new Integer(2));
-		int[] answer3 = {16, 4, 0};
+		int[] answer3 = {0,4,16};
 		assertIsEqual(list, answer3);
 
 		// pop some numbers from the stack
