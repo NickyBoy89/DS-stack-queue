@@ -120,7 +120,7 @@ public abstract class MyLinkedList<T> {
 	}
 
 	/**
-	 * Check that an MyLinkedList<Integer> contains the same elements as an int array.
+	 * Check that an MyLinkedList<Integer> pops elements in the right order
 	 *
 	 * If the list and the array are not the same, throw an AssertionError.
 	 *
@@ -129,15 +129,22 @@ public abstract class MyLinkedList<T> {
 	 */
 	public static void assertIsEqual(MyLinkedList<Integer> list, int[] answer) {
 		if (list.size() != answer.length) {
-			throw new AssertionError("Expected list of length " + answer.length + " but got " + list.size());
+			throw new AssertionError("Reported size of lists were not equal, expected list of length " + answer.length + " but got " + list.size());
 		}
-		for (int i = 0; i < answer.length; i++) {
-			if (!list.get(i).equals(new Integer(answer[i]))) {
-				throw new AssertionError("Expected " + answer[i] + " but got " + list.get(i));
+
+		// Pop everything from the list
+		for (int expected : answer) {
+			int actual = list.pop();
+			if (actual != expected) {
+				throw new AssertionError("Expected " + expected + " but got " + actual);
 			}
 		}
-	}
 
+		// Add all those elements back
+		for (int ans : answer) {
+			list.add(ans);
+		}
+	}
 
 	public static void main(String[] args) {
 

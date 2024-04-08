@@ -50,15 +50,15 @@ public class MyStack<T> extends MyLinkedList<T> {
 
 		// push some elements onto the Stack
 		for (int i = 0; i < 5; i++) {
-			list.push(new Integer (i * i));
+			list.push(Integer.valueOf(i * i));
 		}
-		int[] answer2 = {0,1,4,9,16};
+		int[] answer2 = {16,9,4,1};
 		assertIsEqual(list, answer2);
 
 		// delete some numbers in the middle
-		list.remove(new Integer(1));
-		list.remove(new Integer(2));
-		int[] answer3 = {0,4,16};
+		list.remove(Integer.valueOf(1));
+		list.remove(Integer.valueOf(2));
+		int[] answer3 = {16,4,0};
 		assertIsEqual(list, answer3);
 
 		// pop some numbers from the stack
@@ -68,7 +68,7 @@ public class MyStack<T> extends MyLinkedList<T> {
 		assertIsEqual(list, answer4);
 
 		// delete the final remaining number
-		list.remove(new Integer(0));
+		list.remove(Integer.valueOf(0));
 		int[] answer5 = {};
 		assertIsEqual(list, answer5);
 
